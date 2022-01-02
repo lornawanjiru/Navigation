@@ -1,0 +1,71 @@
+.container {
+  text-align: left;
+  padding: 5%;
+}
+.logo{
+  font-family: "akronim";
+  font-size: 2.5em;
+  margin: 5%;
+  color: #864ef0;
+}
+
+.footer{
+  text-align: center;
+  font-size: .9em;
+  bottom: 0;
+}
+.description{
+  font-size: 1.3em;
+  margin-top: 10%;
+  
+}
+.img{
+  top: 0;
+  margin-top: 10%;
+}
+.button{
+  margin-top: 10%;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 640px){
+  .description{
+    font-size: 0.9em;
+  }
+  
+  .flex{
+    width: 50%;
+    float: right;
+    padding: 20px;
+  }
+  .button{
+    text-align: left;
+  }
+  .buttonsec{
+    display: flex;
+  }
+ 
+  .button{
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 940px){
+  .description{
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+  .logo{
+    margin: 2%;
+  }
+  .img{
+    margin-top: 0;
+  }
+  .footer{
+    
+    font-size: .7em;
+  }
+  .button{
+    width: 60%;
+  }
+}
