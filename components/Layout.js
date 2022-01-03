@@ -8,8 +8,8 @@ export default function Layout({children}){
     return(
     <div className={styles.bgimg}> 
      <Nav /> 
-    {/* {children}
-    <Footer /> */}
+    {children}
+    <Footer />
     </div>
  )
      
