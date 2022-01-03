@@ -21,7 +21,7 @@ export default function Section(){
           <h1> The Basic/Standard Horizontal Menu.</h1>
           <div className={styles.buttonsec}>
           <div className={styles.button}>
-            <button> View code </button>
+            <button> View the code </button>
           </div>
           <div className={styles.button}>
             <button> Documentation </button>
