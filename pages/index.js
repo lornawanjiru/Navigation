@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Section from '../components/Section'
-
+import { useState } from "react";
+import Link from 'next/link'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -18,9 +20,17 @@ export default function Home() {
             Navi.
           </div>
           <div className={styles.nav}>
+            <nav>
+              <ul>
+                <li><Link href="#">Documentation</Link></li>
+                <li><Link href="#">Navigations</Link></li>
+                <li><Link href="#">FAQ</Link></li>
+              </ul>
+            </nav>
           </div>
         </header>
         <Section/>
+        <Footer/> 
       </div>
     </div>  
       

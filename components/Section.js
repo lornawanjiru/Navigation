@@ -1,9 +1,10 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
-import Footer from './Footer'
+
 export default function Section(){
 
     return(
+    
     <div className={styles.container}>
         <div className={styles.flex}>
         <div className={styles.img}>
@@ -12,12 +13,12 @@ export default function Section(){
         </div>
         <div className={styles.flex}>
         <div className={styles.description}>
-          <h1>Hello There,</h1>
-          <h2>This is a navigation menu tutorial. </h2>
+          <p>Hello There,</p>
+          <p>This is a navigation menu tutorial. </p>
           <p> I will be using Next.js Framework.</p>
           <p>For better understanding use a desktop.</p>
           <p>This is the :-</p>
-          <p> The Navigation name appears here.</p>
+          <h1> The Basic/Standard Horizontal Menu.</h1>
           <div className={styles.buttonsec}>
           <div className={styles.button}>
             <button> View code </button>
@@ -28,9 +29,9 @@ export default function Section(){
           </div>
         </div> 
         </div>
-        <br></br>
-        <Footer />
-    </div>
+        
+    </div>    
+  
  )
      
 }
