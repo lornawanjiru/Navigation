@@ -1,0 +1,53 @@
+<ul>
+                    <li>
+                      <a href="#">Basic</a>
+                      <ul>
+                        <li>
+                          <a href="#">Hamburger Menu</a>
+                        </li>
+                        <li>
+                          <a href="#">Basic Horizontal Menu</a>
+                        </li>
+                        <li>
+                          <a href="#">Vertical Sidebar Nav</a>
+                        </li>
+                        <li>
+                          <a href="#">Footer Navbar</a>
+                        </li>
+                        <li>
+                          <a href="#">Mega Dropdown</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Medium</a>
+                      <ul>
+                        <li>
+                          <a href="#">Hover Activated Dropdown</a>
+                        </li>
+                        <li>
+                          <a href="#">Fixed/sticky Menu</a>
+                        </li>
+                        <li>
+                          <a href="#">Centered layout Nav</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Complex</a>
+                      <ul>
+                        <li>
+                          <a href="#">Scroll Triggered</a>
+                        </li>
+                        <li>
+                          <a href="#">Parallax Powered </a>
+                        </li>
+                        <li>
+                          <a href="#">Interactive Nav</a>
+                        </li>
+                        <li>
+                          <a href="#">Multimedia Navbar</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
