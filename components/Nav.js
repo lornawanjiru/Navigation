@@ -17,15 +17,18 @@ export default function Nav(){
               <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
               <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
             </div>
+            
             <div className={styles.logo}>
               <p>Navi.</p> 
             </div>
+            
+            <div>
             <ul className={styles.navmenu}>
               <li>
                 <Link href="#"><a  className ={styles.navlinks}>Documentation</a></Link>
               </li>
               <li>
-                <Link href="#"><a  className ={styles.navlinks}>Navigations<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
+                <Link href="#"><a  className ={styles.navlinks}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                 <ul className={styles.submenu}>
                   <li>
                     <Link href="#"><a  className ={styles.navlinks}>Basic Horizontal Menu</a></Link>
@@ -45,7 +48,7 @@ export default function Nav(){
                   <li>
                     <Link href="#"><a  className ={styles.navlinks}>Footer Menu</a></Link> 
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#"><a  className ={styles.navlinks}>Others<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                     <ul className={styles.submenu}>
                       <li>
@@ -67,12 +70,12 @@ export default function Nav(){
                         <Link href="#"><a  className ={styles.navlinks}>Multimedia Navbar</a></Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li><Link href="#"><a  className ={styles.navlinks}>FAQ</a></Link></li>
             </ul>
-           
+           </div>
           </nav>
          </div>
         </header>

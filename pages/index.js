@@ -19,12 +19,14 @@ export default function Home() {
         </div>
         <div className={styles.flex}>
         <div className={styles.description}>
-          <p>Hello There,</p>
+          <h1>NAVIGATION TUTORIAL WITH THE SOURCE CODE</h1>
+          <br></br>
+          <h2>Hello There,</h2>
           <p>This is a navigation menu tutorial. </p>
           <p> I will be using Next.js Framework.</p>
           <p>For better understanding use a desktop.</p>
-          <p>This is the :-</p>
-          <h1> The Basic/Standard Horizontal Menu.</h1>
+          <p>If you havent understood a thing feel free to ask</p>
+          {/* <h1> The Basic/Standard Horizontal Menu.</h1>
           <div className={styles.buttonsec}>
           <div className={styles.button}>
             <button> View the code </button>
@@ -32,7 +34,7 @@ export default function Home() {
           <div className={styles.button}>
             <button> Documentation </button>
           </div>
-          </div>
+          </div> */}
         </div> 
         </div>
         

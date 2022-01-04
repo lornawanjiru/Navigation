@@ -2,24 +2,23 @@
   /* I used this cause my container div contains floats hence the div doesnt automatically adjust the height. */
   overflow:hidden;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, .1) ;
 }
 .logo{
   font-family: "akronim";
   font-size: 2.5em;
   color: #fff;
-  margin: 2%;
+  margin: 1%;
   width: 5rem;
   height: 5rem;
   display: flex;
-  background-color: #864ef0;
-  border-radius: 100%;
+  /* background-color: #864ef0;
+  border-radius: 100%; */
 }
 .logo p{
   margin: auto;
 }
 .menuicons{
-  color: #000;
+  color: #eee;
   position: absolute;
   top: 7%;
   right: 2rem;
@@ -29,72 +28,6 @@
   z-index: 1500;
   display: none;
 }
-.nav{
-  width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, .1) ;
-}
-.navmenu{
-  display: flex;
-}
-.navmenu li{
-  line-height: 8rem;
-  position: relative;
-}
-.navmenu a{
-  display: block;
-  padding: 0 1.5rem;
-  transition: color 650ms;
-}
-
-.navmenu a:hover{
-  color: #864ef0;
-}
-.submenu li{
-  line-height: 4rem;
-}
-.submenu{
-  width: 20rem;
-  display: block;
-  position: absolute;
-  border-top: 3px solid #864ef0;
-  background-color: #bd9bfc;
-  z-index: 100;
-  top: 16rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 650ms ease;
-}
-.submenu::before{
-  content: "";
-  position: absolute;
-  top: -2.5rem;
-  left: 3rem;
-  /* A way to create a triangle */
-  border: 1.2rem solid transparent;
-  border-bottom-color:#864ef0 ; 
-}
-.submenu .submenu::before{
-  top: .9rem;
-  left: -2.5rem;
-  /* A way to create a triangle */
-  border: 1.2rem solid transparent;
-  border-right-color:#864ef0 ; 
-}
-.submenu .submenu{
-  border-top: none;
-  border-left: 3px solid #864ef0;
-  top: 0;
-  left: 120%;
-}
-.navmenu li:hover > .submenu{
-  top: 8rem;
-  opacity: 1;
-  visibility: visible;
-}
-.submenu li:hover > .submenu {
-  top: 0rem;
-  left: 100%;
-}
 .footer{
   text-align: center;
   font-size: .9em;
@@ -103,6 +36,73 @@
   font-size: 1.3em;
 }
 @media only screen and (min-width: 640px){
+  .nav{
+    width: 90%;
+  }
+  .navmenu{
+    display: flex;
+  }
+  .navmenu li{
+    line-height: 6rem;
+    position: relative;
+  }
+  .navmenu a{
+    display: block;
+    padding: 0 1.5em 0 0;
+    transition: color 650ms;
+  }
+  
+  .navmenu a:hover{
+    color: #864ef0;
+  }
+  .submenu li{
+    line-height: 4rem;
+  }
+  .submenu{
+    color: #eee;
+    text-align: center;
+    width: 13.5rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid #864ef0;
+    background-color: #3c02a9;
+    z-index: 100;
+    top: 16rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+  }
+  .submenu::before{
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    /* A way to create a triangle */
+    border: 1.2rem solid transparent;
+    border-bottom-color:#864ef0 ; 
+  }
+  .submenu .submenu::before{
+    top: .9rem;
+    right: -7.5rem;
+    /* A way to create a triangle */
+    border: 1.2rem solid transparent;
+    border-right-color:#864ef0 ; 
+  }
+  .submenu .submenu{
+    border-top: none;
+    border-right: 3px solid #864ef0;
+    top: 0;
+    right: 120%;
+  }
+  .navmenu li:hover > .submenu{
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  .submenu li:hover > .submenu {
+    top: 0rem;
+    right: 100%;
+  }
   .description{
     font-size: 0.9em;
   }

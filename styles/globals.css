@@ -3,6 +3,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: "aileron"; 
+  background-color: #350196;
+  color: #eee;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -14,6 +17,13 @@ a {
 ul{
   list-style: none;
   padding: 0;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+header{
+  width: 100%; 
 }
 button{
   background-color: #864ef0;
