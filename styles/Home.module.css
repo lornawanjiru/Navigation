@@ -38,7 +38,6 @@
   flex-direction: column;
   background-color: #3c02a9;
   z-index: 1000;
-  overflow-y: scroll;
 }
 .navmenu li{
   line-height: 4rem;
