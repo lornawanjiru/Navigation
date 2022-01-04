@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
@@ -8,14 +8,16 @@ import styles from '../styles/Home.module.css';
 
 
 export default function Nav(){
-
+   
+    
+    
     return(
       <header>
         <div className={styles.nav}>
           <nav>
             <div className={styles.menuicons}>
-              <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+             <div className={styles.bars}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></div> 
+               <div className={styles.close}><FontAwesomeIcon icon={faTimes}></FontAwesomeIcon></div>
             </div>
             
             <div className={styles.logo}>
@@ -79,6 +81,6 @@ export default function Nav(){
           </nav>
          </div>
         </header>
- )
-     
+ ) 
 }
+

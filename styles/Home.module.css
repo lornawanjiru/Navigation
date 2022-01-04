@@ -20,25 +20,28 @@
 .menuicons{
   color: #eee;
   position: absolute;
-  top: 7%;
+  top: 5.5%;
   right: 2rem;
   font-size: 1.5em;
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1500;
-  display: none;
 }
 .navmenu{
+  width: 100%;
+  text-align: center;
   position: fixed;
   top: 0;
+  display: none;
   right: 0;
   height: 100vh;
   flex-direction: column;
   background-color: #3c02a9;
   z-index: 1000;
+  overflow-y: scroll;
 }
 .navmenu li{
-  line-height: 6rem;
+  line-height: 4rem;
 }
 .navmenu a:hover{
   color: #864ef0;
@@ -60,6 +63,13 @@
   visibility: visible;
   max-height: initial;
 }
+.menuicons{
+  display: block;
+}
+.close{
+  display: none;
+}
+
 .footer{
   text-align: center;
   font-size: .9em;
@@ -68,10 +78,18 @@
   font-size: 1.3em;
 }
 @media only screen and (min-width: 640px){
+  .menuicons{
+    display: none;
+  }
   .nav{
     width: 90%;
   }
   .navmenu{
+    height: auto;
+    margin-top: auto;
+    position: relative;
+    flex-direction: row;
+    background-color: #350196;;
     display: flex;
   }
   .navmenu li{
@@ -83,8 +101,6 @@
     padding: 0 1.5em 0 0;
     transition: color 650ms;
   }
-  
-  
   .submenu li{
     line-height: 4rem;
   }

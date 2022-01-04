@@ -18,6 +18,15 @@ ul{
   list-style: none;
   padding: 0;
 }
+nav .active .close{
+  display: block;
+}
+nav .active .bars{
+  display: none;
+}
+nav .active .navmenu{
+  display: flex;
+}
 nav{
   display: flex;
   justify-content: space-between;
