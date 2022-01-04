@@ -82,6 +82,7 @@ export default function Nav(){
               </li>
               <li><Link href="#">FAQ</Link></li>
             </ul>
+            </div>
           </nav>
         </div>
         </header>

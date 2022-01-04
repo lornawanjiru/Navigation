@@ -51,3 +51,76 @@
                       </ul>
                     </li>
                   </ul>
+
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <!-- .navmenu li{
+                     display: block;
+                     padding: 0 2rem;
+                  } -->
+                  
+                  
+                  
+                  <!-- .button{
+                    text-align: center;
+                  } -->
+                  
+                  
+                  @media only screen and (min-width: 640px){
+                  
+                    .description{
+                      font-size: 0.9em;
+                    }
+                    
+                    .flex{
+                      width: 50%;
+                      float: right;
+                      padding: 20px;
+                    }
+                    .button{
+                      text-align: left;
+                    }
+                    .buttonsec{
+                      display: flex;
+                    }
+                   
+                    .button{
+                      width: 50%;
+                    }
+                  }
+                  @media only screen and (min-width: 940px){
+                    .description{
+                      font-size: 1.2em;
+                      margin-top: 0;
+                    }
+                    
+                    
+                    .footer{
+                      font-size: .7em;
+                    }
+                    .button{
+                      width: 60%;
+                    }
+                  }
+                  @media only screen and (min-width: 1200px){
+                   
+                  }                  
+
+                  <!-- global.css -->
+
+                  header{
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                  }
+                  
+                  
+                  
+                  
