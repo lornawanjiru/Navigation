@@ -97,7 +97,7 @@
                   @media only screen and (min-width: 940px){
                     .description{
                       font-size: 1.2em;
-                      margin-top: 0;
+                      
                     }
                     
                     
@@ -122,5 +122,24 @@
                   }
                   
                   
-                  
+                  <ul className={styles.submenu}>
+                    <li>
+                      <Link href="#"><a  className ={styles.navlinks}>Scroll Triggered</a></Link>
+                    </li>
+                    <li>
+                      <Link href="#"><a  className ={styles.navlinks}>Hover Activated</a></Link>
+                    </li>
+                    <li>
+                      <Link href="#"><a  className ={styles.navlinks}>Centered layout</a></Link>
+                    </li>
+                    <li>
+                      <Link href="#"><a  className ={styles.navlinks}>Parallax Powered </a></Link>
+                    </li>
+                    <li>
+                      <Link href="#"><a  className ={styles.navlinks}>Interactive Nav</a></Link>
+                    </li>
+                    <li>
+                      <Link href="#"><a  className ={styles.navlinks}>Multimedia Navbar</a></Link>
+                    </li>
+                  </ul>         
                   

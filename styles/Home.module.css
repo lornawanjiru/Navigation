@@ -39,17 +39,19 @@
 .navmenu li{
   line-height: 8rem;
   position: relative;
+}
+.navmenu a{
   display: block;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   transition: color 650ms;
 }
-.navmenu li :hover{
+
+.navmenu a:hover{
   color: #864ef0;
 }
 .submenu li{
   line-height: 4rem;
 }
-
 .submenu{
   width: 20rem;
   display: block;
@@ -58,6 +60,40 @@
   background-color: #bd9bfc;
   z-index: 100;
   top: 16rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 650ms ease;
+}
+.submenu::before{
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+  /* A way to create a triangle */
+  border: 1.2rem solid transparent;
+  border-bottom-color:#864ef0 ; 
+}
+.submenu .submenu::before{
+  top: .9rem;
+  left: -2.5rem;
+  /* A way to create a triangle */
+  border: 1.2rem solid transparent;
+  border-right-color:#864ef0 ; 
+}
+.submenu .submenu{
+  border-top: none;
+  border-left: 3px solid #864ef0;
+  top: 0;
+  left: 120%;
+}
+.navmenu li:hover > .submenu{
+  top: 8rem;
+  opacity: 1;
+  visibility: visible;
+}
+.submenu li:hover > .submenu {
+  top: 0rem;
+  left: 100%;
 }
 .footer{
   text-align: center;

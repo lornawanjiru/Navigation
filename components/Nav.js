@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css';
 export default function Nav(){
 
     return(
-        <header>
+      <header>
         <div className={styles.nav}>
           <nav>
             <div className={styles.menuicons}>
@@ -22,65 +22,55 @@ export default function Nav(){
             </div>
             <ul className={styles.navmenu}>
               <li>
-                <Link href="#">Documentation</Link>
+                <Link href="#"><a  className ={styles.navlinks}>Documentation</a></Link>
               </li>
               <li>
-                <Link href="#">Navigations</Link>
+                <Link href="#"><a  className ={styles.navlinks}>Navigations<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                 <ul className={styles.submenu}>
                   <li>
-                    <Link href="#">Basic</Link>
-                    <ul className={styles.submenu}>
-                      <li>
-                        <Link href="#">Hamburger Menu</Link>
-                      </li>
-                      <li>
-                        <Link href="#"> Horizontal Menu</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Vertical Sidebar Nav</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Footer Navbar</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Mega Dropdown</Link>
-                      </li>
-                    </ul>
+                    <Link href="#"><a  className ={styles.navlinks}>Basic Horizontal Menu</a></Link>
                   </li>
                   <li>
-                    <Link href="#">Medium</Link>
-                    <ul className={styles.submenu}>
-                      <li>
-                        <Link href="#">Hover Activated Dropdown</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Fixed/sticky Menu</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Centered layout Nav</Link>
-                      </li>
-                    </ul>
+                    <Link href="#"><a  className ={styles.navlinks}>Hamburger Menu </a></Link> 
                   </li>
                   <li>
-                    <Link href="#">Complex</Link>
+                    <Link href="#"><a  className ={styles.navlinks}>Mega Dropdown Menu</a></Link> 
+                  </li>
+                  <li>
+                    <Link href="#"><a  className ={styles.navlinks}>Vertical Sidebar Menu</a></Link> 
+                  </li>
+                  <li>
+                    <Link href="#"><a  className ={styles.navlinks}>Sticky/fixed  Menu</a></Link> 
+                  </li>
+                  <li>
+                    <Link href="#"><a  className ={styles.navlinks}>Footer Menu</a></Link> 
+                  </li>
+                  <li>
+                    <Link href="#"><a  className ={styles.navlinks}>Others<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                     <ul className={styles.submenu}>
                       <li>
-                        <Link href="#">Scroll Triggered</Link>
+                        <Link href="#"><a  className ={styles.navlinks}>Scroll Triggered</a></Link>
                       </li>
                       <li>
-                        <Link href="#">Parallax Powered </Link>
+                        <Link href="#"><a  className ={styles.navlinks}>Hover Activated</a></Link>
                       </li>
                       <li>
-                        <Link href="#">Interactive Nav</Link>
+                        <Link href="#"><a  className ={styles.navlinks}>Centered layout</a></Link>
                       </li>
                       <li>
-                        <Link href="#">Multimedia Navbar</Link>
+                        <Link href="#"><a  className ={styles.navlinks}>Parallax Powered </a></Link>
+                      </li>
+                      <li>
+                        <Link href="#"><a  className ={styles.navlinks}>Interactive Nav</a></Link>
+                      </li>
+                      <li>
+                        <Link href="#"><a  className ={styles.navlinks}>Multimedia Navbar</a></Link>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><Link href="#">FAQ</Link></li>
+              <li><Link href="#"><a  className ={styles.navlinks}>FAQ</a></Link></li>
             </ul>
            
           </nav>
