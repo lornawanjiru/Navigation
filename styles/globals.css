@@ -18,18 +18,16 @@ ul{
   list-style: none;
   padding: 0;
 }
-nav .active .close{
-  display: block;
-}
-nav .active .bars{
-  display: none;
-}
-nav .active .navmenu{
-  display: flex;
-}
 nav{
   display: flex;
   justify-content: space-between;
+}
+nav button{
+  background-color: transparent;
+  box-shadow: none;
+}
+nav button:hover{
+  box-shadow: none;
 }
 header{
   width: 100%; 

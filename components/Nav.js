@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
@@ -9,46 +9,59 @@ import styles from '../styles/Home.module.css';
 
 export default function Nav(){
    
-    
+  const [isOpen,setIsOpen] = useState(false);
+  const openMenu= ()=> setIsOpen(!isOpen);
     
     return(
       <header>
         <div className={styles.nav}>
           <nav>
-            <div className={styles.menuicons}>
-             <div className={styles.bars}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></div> 
-               <div className={styles.close}><FontAwesomeIcon icon={faTimes}></FontAwesomeIcon></div>
-            </div>
-            
             <div className={styles.logo}>
               <p>Navi.</p> 
             </div>
             
             <div>
-            <ul className={styles.navmenu}>
+            <ul className={isOpen === false ? 
+                styles.navmenu : styles.navmenu +' '+ styles.active }>
               <li>
-                <Link href="#"><a  className ={styles.navlinks}>Documentation</a></Link>
+                <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Documentation</a></Link>
               </li>
               <li>
-                <Link href="#"><a  className ={styles.navlinks}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
+                <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                 <ul className={styles.submenu}>
                   <li>
-                    <Link href="#"><a  className ={styles.navlinks}>Basic Horizontal Menu</a></Link>
+                    <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Basic Horizontal Menu</a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a  className ={styles.navlinks}>Hamburger Menu </a></Link> 
+                    <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Hamburger Menu </a></Link> 
                   </li>
                   <li>
-                    <Link href="#"><a  className ={styles.navlinks}>Mega Dropdown Menu</a></Link> 
+                    <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Mega Dropdown Menu</a></Link> 
                   </li>
                   <li>
-                    <Link href="#"><a  className ={styles.navlinks}>Vertical Sidebar Menu</a></Link> 
+                    <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Vertical Sidebar Menu</a></Link> 
                   </li>
                   <li>
-                    <Link href="#"><a  className ={styles.navlinks}>Sticky/fixed  Menu</a></Link> 
+                    <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Sticky/fixed  Menu</a></Link> 
                   </li>
                   <li>
-                    <Link href="#"><a  className ={styles.navlinks}>Footer Menu</a></Link> 
+                    <Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>Footer Menu</a></Link> 
                   </li>
                   {/* <li>
                     <Link href="#"><a  className ={styles.navlinks}>Others<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
@@ -75,8 +88,18 @@ export default function Nav(){
                   </li> */}
                 </ul>
               </li>
-              <li><Link href="#"><a  className ={styles.navlinks}>FAQ</a></Link></li>
+              <li><Link href="#"><a  className ={isOpen === false ? 
+                            styles.navlink : styles.navlink+' '+styles.active}
+                            onClick={openMenu}>FAQ</a></Link></li>
             </ul>
+            <button className={isOpen === false ? 
+                            styles.hamburger : styles.hamburger+' '+styles.active}
+                            onClick={openMenu}
+                            >
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
+            </button>
            </div>
           </nav>
          </div>
