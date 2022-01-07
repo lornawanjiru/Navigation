@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faBars } from "@fortawesome/free-solid-svg-icons"; 
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Home.module.css';
 
@@ -29,9 +27,7 @@ export default function Nav(){
                             onClick={openMenu}>Documentation</a></Link>
               </li>
               <li>
-                <Link href="#"><a  className ={isOpen === false ? 
-                            styles.navlink : styles.navlink+' '+styles.active}
-                            onClick={openMenu}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
+                <Link href="#"><a  className ={styles.navlink}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                 <ul className={styles.submenu}>
                   <li>
                     <Link href="#"><a  className ={isOpen === false ? 

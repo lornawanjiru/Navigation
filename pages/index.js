@@ -19,8 +19,9 @@ export default function Home() {
         </div>
         <div className={styles.flex}>
         <div className={styles.description}>
-          <h1>NAVIGATION TUTORIAL WITH THE SOURCE CODE</h1>
-          <br></br>
+          <div className={styles.title}>
+            <h1>NAVIGATION TUTORIAL WITH THE SOURCE CODE</h1>
+          </div> 
           <h2>Hello There,</h2>
           <p>This is a navigation menu tutorial. </p>
           <p> I will be using Next.js Framework.</p>
