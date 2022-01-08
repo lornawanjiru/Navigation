@@ -1,0 +1,39 @@
+/* Navigation Tutorial Css */
+/* Horizontal Menu */
+.logo{
+    font-family: "akronim";
+    font-size: 2.5em;
+    color: #fff;
+    margin: 1%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+  }
+  .logo p{
+    margin: auto;
+  }
+  .nav{
+    width: 100%;
+  }
+  .navmenu{
+    width: 100%;
+    top: 0;
+    height: auto;
+    margin-top: auto;
+    position: relative;
+    flex-direction: row;
+    background-color: inherit;
+    display: flex;
+  }
+  .navmenu li{
+    line-height: 6rem;
+    position: relative;
+  }
+  .navmenu a{
+    display: block;
+    padding: 0 1.5em 0 0;
+    transition: color 650ms;
+  }
+  .navmenu a:hover{
+    color: #864ef0;
+  }

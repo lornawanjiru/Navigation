@@ -22,7 +22,7 @@ export default function Nav(){
             <ul className={isOpen === false ? 
                 styles.navmenu : styles.navmenu +' '+ styles.active }>
               <li>
-                <Link href="#"><a  className ={isOpen === false ? 
+                <Link href="/"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Documentation</a></Link>
               </li>
@@ -30,7 +30,7 @@ export default function Nav(){
                 <Link href="#"><a  className ={styles.navlink}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                 <ul className={styles.submenu}>
                   <li>
-                    <Link href="#"><a  className ={isOpen === false ? 
+                    <Link href="/horizontalmenu"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Basic Horizontal Menu</a></Link>
                   </li>
@@ -99,7 +99,7 @@ export default function Nav(){
            </div>
           </nav>
          </div>
-        </header>
+      </header>
  ) 
 }
 
