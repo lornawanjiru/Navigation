@@ -25,7 +25,7 @@
   right: 0;
   height: 80vh;
   flex-direction: column;
-  background-color: inherit;
+  background-color: #3c02a9;
   z-index: 1000;
  
 }
@@ -118,11 +118,19 @@
 
 .showcase{
   width: 80%;
-  height: 50vh;
-  background-color: #3c02a9;
+  height: auto;
+  margin-left: 10%;
+  background-color: #8c53ff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  display: none;
+}
+.layout{
+  overflow: hidden;
 }
 @media only screen and (min-width: 640px){
+  .showcase{
+    display: block;
+  }
   .hamburger{
     display: none;
   }

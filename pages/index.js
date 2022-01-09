@@ -22,11 +22,12 @@ export default function Home() {
           <div className={styles.title}>
             <h1>NAVIGATION TUTORIAL WITH THE SOURCE CODE</h1>
           </div> 
-          <h2>Hello There,</h2>
-          <p>This is a navigation menu tutorial. </p>
-          <p> I will be using Next.js Framework.</p>
+          <p>Are you having trouble implementing the navigation menu on next.js? </p>
+          <p> There might be a lot of new stuff on this amazing Framework.</p>
+          <p> But there some new things that need to be put in place for stuff to work.</p>
+          <p> This is not a Next.js tutorial, It only focuses on the navigation section .</p>
           <p>For better understanding use a desktop.</p>
-          <p>If you havent understood a thing feel free to ask</p>
+          
           {/* <h1> The Basic/Standard Horizontal Menu.</h1>
           <div className={styles.buttonsec}>
           <div className={styles.button}>
