@@ -127,16 +127,26 @@
 .layout{
   overflow: hidden;
 }
-.codebox{
-  width: 50%;
+.description .codebox{
+  height: 12vh;
+  overflow-y: hidden;
+  width: 110%;
 }
 
 @media only screen and (min-width: 640px){
+  .codebox{
+    width: 50%;
+  }
+  .cssbox{
+    width: 50%;
+    padding-left: 3%;
+  }
   .codesec{
     display: flex;
   }
   .codesec .description{
-    padding-left: 4%;
+    width: 60%;
+    margin-left: 20%; 
   }
   .navimg{
     display: none;
@@ -260,4 +270,10 @@
   .button{
     width: 60%;
   }
+  
+}
+@media only screen and (min-width: 1240px){
+  .description .codebox{
+    height: 30vh;
+    }
 }
