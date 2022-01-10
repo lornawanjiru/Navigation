@@ -21,7 +21,7 @@ function Horizontal(){
         <div className={styles.layout}>
             <div className={styles.flex}>
             <div className={styles.img}>
-            <Image src= "/Landing.png" height={350} width={430}/>
+            <Image src= "/nav1.svg" height={350} width={430}/>
             </div>
             </div>
             <div className={styles.flex}>
