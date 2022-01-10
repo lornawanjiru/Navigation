@@ -129,7 +129,6 @@
 }
 .description .codebox{
   height: 20vh;
-  overflow-y: hidden;
   width: 110%;
 }
 

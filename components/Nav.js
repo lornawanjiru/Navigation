@@ -84,7 +84,7 @@ export default function Nav(){
                   </li> */}
                 </ul>
               </li>
-              <li><Link href="#"><a  className ={isOpen === false ? 
+              <li><Link href="https://www.notion.so/NAVIGATION-WEBAPP-d0fd58f29ebf429bab7e54d2dfaae722"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Documentation</a></Link></li>
             </ul>
