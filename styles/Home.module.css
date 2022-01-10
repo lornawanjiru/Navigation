@@ -127,7 +127,20 @@
 .layout{
   overflow: hidden;
 }
+.codebox{
+  width: 50%;
+}
+
 @media only screen and (min-width: 640px){
+  .codesec{
+    display: flex;
+  }
+  .codesec .description{
+    padding-left: 4%;
+  }
+  .navimg{
+    display: none;
+  }
   .showcase{
     display: block;
   }

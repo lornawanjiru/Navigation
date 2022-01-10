@@ -24,7 +24,7 @@ export default function Nav(){
               <li>
                 <Link href="/"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
-                            onClick={openMenu}>Documentation</a></Link>
+                            onClick={openMenu}>Home</a></Link>
               </li>
               <li>
                 <Link href="#"><a  className ={styles.navlink}>Navigations <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
@@ -86,7 +86,7 @@ export default function Nav(){
               </li>
               <li><Link href="#"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
-                            onClick={openMenu}>FAQ</a></Link></li>
+                            onClick={openMenu}>Documentation</a></Link></li>
             </ul>
             <button className={isOpen === false ? 
                             styles.hamburger : styles.hamburger+' '+styles.active}
