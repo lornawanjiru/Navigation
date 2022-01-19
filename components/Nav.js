@@ -35,7 +35,7 @@ export default function Nav(){
                             onClick={openMenu}>Basic Horizontal Menu</a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a  className ={isOpen === false ? 
+                    <Link href="/hamburgermenu"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Hamburger Menu </a></Link> 
                   </li>

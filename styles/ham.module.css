@@ -1,0 +1,82 @@
+.logo{
+    font-family: "akronim";
+    font-size: 2.5em;
+    color: #fff;
+    margin: 1%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+  }
+  .logo p{
+    margin: auto;
+  }
+  .navmenu{
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    top: 15%;
+    display: none;
+    margin-right: 10%;
+    height: 10vh;
+    flex-direction: column;
+    background-color: #3c02a9;
+    z-index: 1000;
+   
+  }
+  .navmenu.active {
+    right: 5%;
+    display: inline;
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  .navitem {
+    margin: 2.5rem 0;
+  }
+  .button{
+      margin-top: 1.5%;
+  }
+  .hambuger{
+    margin-top: 2%;
+    margin-left: 87%;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  .navmenu li{
+    line-height: 4rem;
+  }
+  .navmenu a:hover{
+    color: #864ef0;
+  }
+  @media only screen and (min-width: 1200px){
+    .navmenu{
+        top: 30%;
+        height: 20vh;  
+      }
+  }
+  

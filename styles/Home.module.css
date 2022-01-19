@@ -131,6 +131,12 @@
   height: 15vh;
   width: 110%;
 }
+.description a{
+	color: #3366BB;
+	font-size: .9em;
+	font-style: italic;
+}
+
 
 @media only screen and (min-width: 640px){
   .description .codebox{
