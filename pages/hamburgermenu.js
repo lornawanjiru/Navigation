@@ -210,7 +210,7 @@ function Hambuger(){
                  client-side navigation to a different page in the application. 
                  Next js comes with an inbuilt routing component which wraps up the a tag.<br></br>
                     ii.Then the imports of css files.We import component level css. If you check keenly its saved as [name].module.css 
-                <a href='https://nextjs.org/docs/basic-features/built-in-css-support'> Learn More</a> 
+                <a href='https://nextjs.org/docs/basic-features/built-in-css-support'> Learn More </a> <br></br>
                     iii. The useState allows our functional components which used to be stateless become stateful. 
                <br/> <br/> 
                  2. After we create a hambuger function we define the variables that will enables us to open and close the 
