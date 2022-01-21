@@ -76,7 +76,7 @@ function Hambuger(){
                             <div className={styles.logo}>
                               <p>HAMBURGER.</p> 
                             </div>
-                            <div className={styles.collapsiblesec}>
+                            <div>
                             <ul className={isOpen === false ? 
                                 styles.navmenu : styles.navmenu +' '+ styles.active }>
                               <li>
@@ -206,24 +206,19 @@ function Hambuger(){
                 <h1>The Code.</h1>
             </div>
                <p> 
-                 1. Lets start with the imports; We import Link since its used to route through pages. 
-                 Next js comes with an inbuilt routing component which takes the value of href property.
-                 Then the imports of css files. Notice how its save as ...module.css. This brings the difference of
-                 global css which is saved the usual way of saving e.g:- home.css and the now the next js way of saving which is 
-                 home.module.css.
-                 The useState module will be used when create a const variable.  
-               <br/>
-                 2.
-                A number of factors influence the decision to choose horizontal navigation,
-                including design, usability and intention of content.<br/> <br/>Small websites often prefer horizontal
-                type at the top of the site,
-                while large corporate websites often use both horizontal and vertical type. </p> 
-                <p> <br/>
-                The Next.js Link component takes a route or navigation path as the value of its href property.
-                You can embed any other component within Link as long as that component can take an href prop as seen in the first code IDE
-                for nav.js File.<br/>
-                Then using your layout css file ensure you navigation is flexed in a row direction, pad between the links.
-                Add hover effect to inform the user the link he/she is about to click.<br/>
+                 1. i. Lets start with the imports; We import Link which allows you to do 
+                 client-side navigation to a different page in the application. 
+                 Next js comes with an inbuilt routing component which wraps up the a tag.<br></br>
+                    ii.Then the imports of css files.We import component level css. If you check keenly its saved as [name].module.css 
+                <a href='https://nextjs.org/docs/basic-features/built-in-css-support'> Learn More</a> 
+                    iii. The useState allows our functional components which used to be stateless become stateful. 
+               <br/> <br/> 
+                 2. After we create a hambuger function we define the variables that will enables us to open and close the 
+                nav menu when clicking on the hambuger button. 
+               <br/> <br/>
+                 3. The Css is th basic css hence needs Css knowledge. 
+                <br/>
+                <br/>
                 Easy right!!! I hope :)  </p> 
             </div> 
          </div>
