@@ -27,16 +27,6 @@ export default function Home() {
           <p> But there some new things that need to be put in place for stuff to work.</p>
           <p> This is not a Next.js tutorial, It only focuses on the navigation section .</p>
           <p>For better understanding use a desktop.</p>
-          
-          {/* <h1> The Basic/Standard Horizontal Menu.</h1>
-          <div className={styles.buttonsec}>
-          <div className={styles.button}>
-            <button> View the code </button>
-          </div>
-          <div className={styles.button}>
-            <button> Documentation </button>
-          </div>
-          </div> */}
         </div> 
         </div>
         

@@ -41,7 +41,8 @@ function Hambuger(){
                 menu or navigation drawer. <br />It’s called a “hamburger menu” because it takes the form of the famous sandwich. 
                 This icon was created by the designer Norm Cox for the graphical user interface of the Xerox Star workstation 
                 in 1981.<br /> Cox’s goal was to create an icon that would communicate to users that a list of items was hidden 
-                behind it.<br />
+                behind it.<br /> This type of menu is mostly in mobile-view but off late even desktop view have adopted this 
+                type of menu hence has become even moe popular than it was.
                  <br />
                 You can get to read more on hamburger in following links:- <br /> <br />
                 <a href={"https://www.howtogeek.com/720214/what-is-a-hamburger-menu-button/"}>1. https://www.howtogeek.com/720214/what-is-a-hamburger-menu-button/</a>  <br /> 
@@ -204,8 +205,15 @@ function Hambuger(){
             <div className={styles.title}>
                 <h1>The Code.</h1>
             </div>
-               <p>This is a really simple navigation menu. The trick is your css file.
-               <br/><br/>
+               <p> 
+                 1. Lets start with the imports; We import Link since its used to route through pages. 
+                 Next js comes with an inbuilt routing component which takes the value of href property.
+                 Then the imports of css files. Notice how its save as ...module.css. This brings the difference of
+                 global css which is saved the usual way of saving e.g:- home.css and the now the next js way of saving which is 
+                 home.module.css.
+                 The useState module will be used when create a const variable.  
+               <br/>
+                 2.
                 A number of factors influence the decision to choose horizontal navigation,
                 including design, usability and intention of content.<br/> <br/>Small websites often prefer horizontal
                 type at the top of the site,
