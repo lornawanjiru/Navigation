@@ -40,7 +40,7 @@ export default function Nav(){
                             onClick={openMenu}>Hamburger Menu </a></Link> 
                   </li>
                   <li>
-                    <Link href="megadrop"><a  className ={isOpen === false ? 
+                    <Link href="/megadrop"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Mega Dropdown Menu</a></Link> 
                   </li>
