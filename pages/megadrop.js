@@ -21,7 +21,7 @@ function Horizontal(){
         <div className={styles.navimg}>
             <Image src= "/Nav1.png" height={60} width={600}/>
         </div>
-        <div className={styles.showcase}>
+        <div className={styles.megashowcase}>
           <Mega/>
         </div>
         <div className={styles.layout}>
