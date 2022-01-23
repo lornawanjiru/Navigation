@@ -11,7 +11,7 @@ function Mega(){
         <div className={styles.nav}>
           <nav>
             <div className={styles.logo}>
-              <p>HORI.</p> 
+              <p>MEGA.</p> 
             </div>
             
             <div>

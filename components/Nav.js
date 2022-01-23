@@ -44,7 +44,7 @@ export default function Nav(){
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Mega Dropdown Menu</a></Link> 
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Vertical Sidebar Menu</a></Link> 
@@ -58,7 +58,7 @@ export default function Nav(){
                     <Link href="#"><a  className ={isOpen === false ? 
                             styles.navlink : styles.navlink+' '+styles.active}
                             onClick={openMenu}>Footer Menu</a></Link> 
-                  </li>
+                  </li> */}
                   {/* <li>
                     <Link href="#"><a  className ={styles.navlinks}>Others<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a></Link>
                     <ul className={styles.submenu}>

@@ -19,7 +19,7 @@ function Horizontal(){
             <link rel="icon" href="/logo.png" />
         </Head>
         <div className={styles.navimg}>
-            <Image src= "/Nav1.png" height={60} width={600}/>
+            <Image src= "/Mega1.png" height={180} width={380}/>
         </div>
         <div className={styles.megashowcase}>
           <Mega/>
@@ -33,12 +33,19 @@ function Horizontal(){
             <div className={styles.flex}>
             <div className={styles.description}>
             <div className={styles.title}>
-                <h1>The Basic/Standard Horizontal Menu.</h1>
+                <h1>The Mega-drop Menu.</h1>
             </div>
-            <p>This is the menu you see in all most all web apps.
-               Its really simple to implement and has resources on how to do it. </p> 
-            <p>It has the pages aligned horizontally next to each other and is placed at the website header. </p>   
-            <p> Disclaimer :- The code isnt responsive</p>
+            <p>Complex websites often rely on complex navigation. When a website houses thousands of pages, 
+              often combined with micro-websites and hundreds of subsections, eventually the navigation will go 
+              deep and broad. And with such a complex multi-level navigation, showing the breadth of options requires 
+              quite a bit of space. Think of large eCommerce retailers and large corporate sites,
+               catering to many audiences and having plenty of entry points.</p>
+            <p>No wonder that a common way to deal with this complexity is to expose customers to a 
+              large amount of navigation quickly.That’s exactly why mega-dropdowns have become somewhat an 
+              institution on the web — albeit mostly for complex and large projects. A mega-dropdown is essentially 
+              a large overlay that appears on a user’s action. Usually it includes a mixed bag of 
+              links, buttons, thumbnails and sometimes nested dropdowns and overlays on its own. </p> 
+             
             </div> 
             </div>
         </div>
@@ -49,31 +56,68 @@ function Horizontal(){
                 <pre>
                 <code className={styles.hljs}>
                 {`
-                return(
-                <div className={styles.navhori}>
-                <header>
-                <div className={styles.nav}>
-                <nav>
-                <div className={styles.logo}>
-                <p>HORI.</p> 
-                </div>
-
-                <div>
-                <ul className={styles.navmenu}>
-                <li>
-                <Link href="#"><a  className ={styles.navlink}>Home</a></Link>
-                </li>
-                <li>
-                <Link href="#"><a  className ={styles.navlink}>About</a></Link>
-                </li>
-                <li><Link href="#"><a  className ={styles.navlink}>Contact</a></Link></li>
-                </ul>
-                </div>
-                </nav>
-                </div>
-                </header>
-                </div>
-                )
+                import Link from 'next/link'
+                import styles from '../styles/mega.module.css';
+                import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+                import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+                
+                function Mega(){
+                
+                 return(
+                    <div className={styles.navhori}>
+                        <header>
+                        <div className={styles.nav}>
+                          <nav>
+                            <div className={styles.logo}>
+                              <p>MEGA.</p> 
+                            </div>
+                            
+                            <div>
+                            <ul className={styles.navmenu}>
+                                <li><Link href="#"><a className ={styles.navlink}>Home</a></Link></li>
+                                <li><Link href="#"><a className ={styles.navlink}> News</a></Link></li>
+                                <li><Link href="#"><a className ={styles.navlink}>
+                                <div className={styles.dropdown}>
+                                    <Link href="#" ><a className={styles.navlink}>Dropdown
+                                    <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></a>
+                                    </Link>
+                                    <div className={styles.dropdowncontent}>
+                                    <div className={styles.row}>
+                                        <div className={styles.column}>
+                                        <h3>First Column</h3>
+                                        <li><Link href="#"><a>Link 1</a></Link></li> 
+                                        <li><Link href="#"><a>Link 2</a></Link></li> 
+                                        <li><Link href="#"><a>Link 3</a></Link></li> 
+                                        </div>
+                                        <div className={styles.column}>
+                                        <h3>Second Column</h3>
+                                        <li><Link href="#"><a>Link 1</a></Link></li> 
+                                        <li><Link href="#"><a>Link 2</a></Link></li> 
+                                        <li><Link href="#"><a>Link 3</a></Link></li> 
+                                        </div>
+                                        <div className={styles.column}>
+                                        <h3>Third Column</h3>
+                                        <li><Link href="#"><a>Link 1</a></Link></li> 
+                                        <li><Link href="#"><a>Link 2</a></Link></li> 
+                                        <li><Link href="#"><a>Link 3</a></Link></li> 
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                </div>
+                                </a>
+                                </Link>
+                                </li>
+                            </ul>
+                           </div>
+                          </nav>
+                         </div>
+                      </header>
+                      </div>
+                 )
+                }
+                export default Mega
+                
 
                 `}
                 </code>
@@ -84,44 +128,129 @@ function Horizontal(){
                 <code className={styles.hljs}>  
                 {`
                   /* Navigation Tutorial Css */
-                  /* Horizontal Menu */
                   .logo{
-                      font-family: "akronim";
-                      font-size: 2.5em;
-                      color: #fff;
-                      margin: 1%;
-                      width: 5rem;
-                      height: 5rem;
-                      display: flex;
-                    }
-                    .logo p{
-                      margin: auto;
-                    }
-                    .nav{
-                      width: 100%;
-                    }
-                    .navmenu{
-                      width: 100%;
-                      top: 0;
-                      height: auto;
-                      margin-top: auto;
-                      position: relative;
-                      flex-direction: row;
-                      background-color: inherit;
-                      display: flex;
-                    }
-                    .navmenu li{
-                      line-height: 6rem;
-                      position: relative;
-                    }
-                    .navmenu a{
-                      display: block;
-                      padding: 0 1.5em 0 0;
-                      transition: color 650ms;
-                    }
-                    .navmenu a:hover{
-                      color: #864ef0;
-                    }
+                    font-family: "akronim";
+                    font-size: 2.5em;
+                    color: #fff;
+                    margin: 1%;
+                    width: 5rem;
+                    height: 5rem;
+                    display: flex;
+                  }
+                  .logo p{
+                    margin: auto;
+                  }
+                  .navmenu{
+                    width: 100%;
+                    top: 0;
+                    height: auto;
+                    margin-top: auto;
+                    position: relative;
+                    flex-direction: row;
+                    background-color: inherit;
+                    display: flex;
+                   
+                  }
+                  .navmenu.active {
+                    right: 5%;
+                    display: inline;
+                    border-radius: 8px;
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                  }
+                  
+                  .navitem {
+                    margin: 2.5rem 0;
+                  }
+                  
+                  .navmenu li{
+                    line-height: 6em;
+                    position: relative;
+                  }
+                  .column li{
+                    line-height: 2em;
+                }
+                  .navmenu a{
+                    display: block;
+                    padding: 0 1.5em 0 0;
+                    transition: color 650ms;
+                  }
+                  .navmenu a:hover{
+                    color: #000;
+                  }
+                  .navbar {
+                    overflow: hidden;
+                  }
+                  
+                  .navbar a {
+                    /* float: left; */
+                    font-size: 16px;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                  }
+                  
+                  .dropdown {
+                    float: left;
+                    overflow: hidden;
+                  }
+                  
+                  .dropdown .dropbtn {
+                    font-size: 16px;  
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 14px 16px;
+                    background-color: inherit;
+                    font: inherit;
+                    margin: 0;
+                  }
+                  
+                  .navbar a:hover, .dropdown:hover .dropbtn {
+                    background-color: #000;
+                  }
+                  
+                  .dropdowncontent {
+                    display: none;
+                    position: absolute;
+                    background-color: #3c02a9;
+                    width: 400%;
+                    right: 5%;
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                    z-index: 1;
+                  }
+                  
+                  .dropdown:hover .dropdowncontent {
+                    display: block;
+                  }
+                  
+                  /* Create three equal columns that floats next to each other */
+                  .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 10px;
+                    
+                  }
+                  
+                  .column a {
+                    float: none;
+                    color: #fff;
+                    padding: 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                  }
+                  
+                  .column a:hover {
+                    background-color: #864ef0;
+                  }
+                  
+                  /* Clear floats after the columns */
+                  .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
                    
                 `}
                 </code>
@@ -136,19 +265,8 @@ function Horizontal(){
             <div className={styles.title}>
                 <h1>The Code.</h1>
             </div>
-               <p>This is a really simple navigation menu. The trick is your css file.
-               <br/><br/>
-                A number of factors influence the decision to choose horizontal navigation,
-                including design, usability and intention of content.<br/> <br/>Small websites often prefer horizontal
-                type at the top of the site,
-                while large corporate websites often use both horizontal and vertical type. </p> 
-                <p> <br/>
-                The Next.js Link component takes a route or navigation path as the value of its href property.
-                You can embed any other component within Link as long as that component can take an href prop as seen in the first code IDE
-                for nav.js File.<br/>
-                Then using your layout css file ensure you navigation is flexed in a row direction, pad between the links.
-                Add hover effect to inform the user the link he/she is about to click.<br/>
-                Easy right!!! I hope :)  </p> 
+               <p> The Mega.js file and the mega.module.css file 
+                </p> 
             </div> 
          </div>
         </div>
